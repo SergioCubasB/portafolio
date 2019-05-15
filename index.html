@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFB000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="style.css">
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body  onload="mostrarSaludo()">
+
+
+<!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" style="display: none; padding-right: 17px; background: #ffa502;">
+      <div class="modal-dialog"><!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">×</button>
+        </div>
+
+          <div class="modal-body">
+
+            <div id="saludo" class="mb-5 mt-5">
+   
+              <img name="tiempo">
+             
+              <div id="txtsaludo"></div>
+              <p>En estos momentos me encuentro mejorando la plataforma. <br>
+                Este portafolio es una web simple que será integrado al CMS Wordpress. <br>
+                Podras encontrar mi cv y portafolio de trabajo si te animas a revisar.
+                
+  
+
+              </p>
+             
+          </div> 
+          </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal" type="button">Revisar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="container-fluid fondo">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 col-12 responsive-completo contenido-datos">
+          <div class="contenido-redes">
+
+            <a href="https://github.com/SergioCubasB" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/github.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sergiocubasbernal/" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/linkendin.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.facebook.com/sergio.cubas.39" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/facebook.svg" alt="">
+            </figure>
+            </a>
+
+
+            <a href="" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/twitter.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.instagram.com/stories/sergio_cubas_/" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/instagram.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/behance.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/dribbble.svg" alt="">
+            </figure>
+            </a>
+
+          </div>
+
+          <div class="contenido-informacion">
+            <figure class="figure informacion">
+              <img class="icon-informacion" src="assets/svg/ubicacion.svg" alt="">
+              <figcaption class="figure-caption text-right"><h5>Cercado de Lima</h5></figcaption>
+            </figure>
+
+            <figure class="figure informacion">
+              <img class="icon-informacion" src="assets/svg/telefono.svg" alt="">
+              <figcaption class="figure-caption text-right"><h5>983 462 077</h5></figcaption>
+            </figure>
+
+            <figure class="figure informacion">
+              <img class="icon-informacion" src="assets/svg/correo.svg" alt="">
+              <figcaption class="figure-caption text-right"><h5>sergio.cubas.b@gmail.com </h5></figcaption>
+            </figure>
+            
+          </div>
+        </div>
+
+
+
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-12 pl-0 pr-0 d-xl-none d-lg-none d-md-none d-sm-block d-block header">
+
+          <div class="separador-amarillo">
+          </div>
+
+          <div class="contenido-descargar-responsive">
+            <a class="descargar-cv" href="assets/SergioCubasCV.pdf" target="_Blank" download> Descargar CV </a>
+          </div>
+        </div>
+
+
+        <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-12 contenido-personaje">
+
+          <div class="contenido-descargar">
+            <a class="descargar-cv" href="assets/SergioCubasCV.pdf"  target="_Blank"  download> Descargar CV </a>
+          </div>
+
+          <div class="contenido-personaje-texto">
+          
+          <a href="#" class="open"><img class="personaje" src="assets/svg/personaje.svg" alt=""></a>
+          <div id="wrap"> 
+          <h3>Sergio Cubas Bernal  <span></span> </h3>
+          </div>
+          <h5 class="color-amarillo">Developer - Illustrator</h5>
+          
+          <div id="somedialog" class="dialog">
+            <div class="dialog-overlay">  </div>        
+
+            <div class="dialog-content">
+
+              <div class="contenido-icons-modal">
+                <a href="">
+                  <div class="icons">
+                    <img class="icon-modal" src="assets/svg/about-me.svg" alt="">
+                    <h3>¿Quien soy?</h3>
+                  </div>
+                </a>
+                
+                <a href="">
+                <div class="icons">
+                  <img class="icon-modal" src="assets/svg/skills.svg" alt="">
+                  <h3>Habilidades</h3>
+                </div>
+                </a>
+                
+                <a href="portafolio.html">
+                <div class="icons">
+                  <img class="icon-modal" src="assets/svg/portafolio.svg" alt="">
+                  <h3>Portafolio</h3>
+                </div>
+                </a>
+                
+
+                <a href="">
+                <div class="icons">
+                  <img class="icon-modal" src="assets/svg/blog.svg" alt="">
+                  <h3>Blog</h3>
+                </div>
+                </a>
+
+
+                <a href="">
+                <div class="icons">
+                  <img class="icon-modal" src="assets/svg/contactame.svg" alt="">
+                  <h3>Contáctame</h3>
+                </div>
+                </a>
+
+              </div>
+
+
+              <a href="#" class="btn btn-cta"> <i class="fas fa-times anim-close"></i></a>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+          <div class="col-sm-12 col-12 contenido-llamada-responsive pl-0 pr-0">
+
+            <div class="contenido-inicio">
+                <a href="index.html">
+                <figure class="figure inicio">
+                  <img class="icon-inicio" src="assets/svg/llamada.svg" alt="">
+                </figure>
+                </a>
+              </div>
+
+
+
+              <div class="contenido-llamada">
+                <a href="tel:+51983462077">
+                <figure class="figure llamada">
+                  <img class="icon-llamada" src="assets/svg/llamada.svg" alt="">
+                </figure>
+                </a>
+              </div>
+
+
+              <div class="contenido-boton">
+                <a href="tel:+51983462077">
+                <figure class="figure boton">
+                  <img class="icon-boton" src="assets/svg/llamada.svg" alt="">
+                </figure>
+                </a>
+              </div>
+              
+          </div>
+          
+
+          <div class="col-sm-12 col-12  contenido-footer-responsive">
+            <footer>
+
+              <div class="contenido-redes">
+
+            <a href="https://github.com/SergioCubasB" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/github.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sergiocubasbernal/" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/linkendin.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.facebook.com/sergio.cubas.39" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/facebook.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="" target="_blank">
+            <figure class="figure redes" >
+              <img class="icon-redes" src="assets/svg/twitter.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="https://www.instagram.com/stories/sergio_cubas_/" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/instagram.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/behance.svg" alt="">
+            </figure>
+            </a>
+
+            <a href="" target="_blank">
+            <figure class="figure redes">
+              <img class="icon-redes" src="assets/svg/dribbble.svg" alt="">
+            </figure>
+            </a>
+
+          </div>
+              
+            </footer>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+  <script src="assets/js/logica.js"></script>
+
+  <script>
+function mostrarSaludo(){
+ 
+  fecha = new Date(); 
+  hora = fecha.getHours(); 
+ 
+  if(hora >= 0 && hora < 12){
+    texto = "Hola, buenos días";
+    imagen = "assets/svg/dinodino.svg";
+  }
+ 
+  if(hora >= 12 && hora < 18){
+    texto = "Hola, buenas tardes";
+    imagen = "assets/svg/dinodino.svg";
+  }
+ 
+  if(hora >= 18 && hora < 24){
+    texto = "Hola, buenas noches";
+    imagen = "assets/svg/dinodino.svg";
+  }
+ 
+  document.images["tiempo"].src = imagen;
+ 
+  document.getElementById('txtsaludo').innerHTML = texto;
+ 
+}
+</script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   $(function(){
+    $("#myModal").modal();
+   });
+  </script>
+    
+
+
+  </body>
+  </html>
