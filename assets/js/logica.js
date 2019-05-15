@@ -21,8 +21,29 @@ Element.prototype.addClass = function(c){
     return this.addEventListener(h,f);
   }
 
+
 var d = $('#somedialog');
 $('.open').on('click',function(e){
+  e.preventDefault();
+  d.removeClass('dialog-close');
+  d.addClass('dialog-open');
+});
+$('.dialog-overlay').on('click',function(e){
+  e.preventDefault();
+  d.removeClass('dialog-open');
+  d.addClass('dialog-close');
+});
+$('.btn-cta').on('click',function(e){
+  e.preventDefault();
+  /*$('.dialog-content').innerHTML='<i>Thank you for your honesty!';*/
+  setTimeout(()=>{ 
+  d.removeClass('dialog-open');
+  d.addClass('dialog-close');},10);
+});
+
+
+var d = $('#somedialog');
+$('.open2').on('click',function(e){
   e.preventDefault();
   d.removeClass('dialog-close');
   d.addClass('dialog-open');
