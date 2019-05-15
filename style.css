@@ -1,6 +1,28 @@
+footer{
+    background: #ffa502;
+}
 
+
+.footer-copyright.text-center.py-3 {
+    color: black;
+}
+
+
+
+.mt-5.text-center .icon-redes {
+    width: 37px;
+}
+
+
+
+
+
+.row {
+    height: 100%;
+        width: 100%;
+}
 a.enlace-regreso {
-    color: red;
+        color: #e74c3c;
     text-decoration: none;
 }
 
@@ -11,10 +33,6 @@ a.enlace-regreso {
     justify-content: center;
     margin: auto !important;
     height: 100%;
-}
-
-.card.mb-4.box-shadow:hover{
-    background: #ffa502;
 }
 
 
@@ -669,11 +687,11 @@ span:after {
     
     div#wrap h3 {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     }
 
     img.personaje {
-        width: 285px;
+        width: 220px;
         padding-top: 7%;
     }
     .contenido-icons-modal {
@@ -699,7 +717,7 @@ span:after {
     }
     .color-amarillo {
         color: #ffa502;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     figcaption.figure-caption.text-right h5 {
@@ -784,7 +802,7 @@ span:after {
 
 
     img.personaje {
-        width: 315px!important;
+       width: 245px!important;
     }
     .contenido-personaje-texto {
         bottom: 100px!important
@@ -952,7 +970,7 @@ span:after {
     }
 
     img.personaje {
-    width: 255px!important;
+        width: 180px!important;
     }
 
     .col-sm-12.col-12.contenido-llamada-responsive.pl-0.pr-0 {
@@ -1101,7 +1119,7 @@ span:after {
     }
     .contenido-personaje-texto h3 {
 
-        font-size: 25px
+        font-size: 20px;
         color:black;
     }
     .contenido-personaje-texto h5 {
@@ -1286,7 +1304,7 @@ span:after {
     }
 
     img.personaje {
-    width: 84%;
+    width: 60%;
     }
 
     .contenido-llamada {
