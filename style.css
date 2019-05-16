@@ -1,3 +1,7 @@
+* {
+    font-family: mousse;
+}
+
 .mix {
   display: none;
 }
@@ -140,9 +144,6 @@ i.fas.fa-times.anim-close {
     color: #000
 }
 
-* {
-    font-family: mousse
-}
 
 @import "compass/css3";
 
