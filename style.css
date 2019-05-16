@@ -843,10 +843,6 @@ span:after {
 
 
 @media only screen and (max-height: 700px){
-body{
-background: red !important; 
-}
-
 .contenido-personaje img.personaje {
     width: 195px!important;
     padding-top: 60px !important;
@@ -854,9 +850,6 @@ background: red !important;
 }
 
 @media only screen and (max-height: 700px){
-body{
-background: yellow !important; 
-}
 
 .contenido-personaje img.personaje {
     width: 140px!important;
@@ -866,9 +859,6 @@ background: yellow !important;
 
 
 @media (min-width: 765px) and (max-height: 700px){
-body{
-background: blue !important; 
-}
 
 .contenido-personaje img.personaje {
     width: 195px!important;
