@@ -7,239 +7,468 @@
     <title>Portafolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     
 
   </head>
   <body  onload="mostrarSaludo()">
 
-    <main role="main"> 
+<div class="container-fluid p-0">
+  <div class="row m-0">
 
+
+    <div class="col-xl-12 p-0">
       <div class="jumbotron">
-        <div class="container">
+        <div class="container portafolio">
           <h1 class="display-3">Portafolio</h1>
           <p>Estos son algunos de los trabajos que he desarrollado, donde aplique los conocimientos aprendidos en el camino.</p>
           <p> <a class="enlace-regreso" href="index.html">Inicio</a> / Portafolio</p>
         </div>
+
       </div>
+    </div>
+
+   
+
+  </div>
+</div>
+
+  <!-- Demo Content -->
+  <div class="container p-3">
+    <div class="row mb-5 ml-0 mr-0">
 
 
-      <div class="album py-5 bg-light">
-        <div class="container">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contenido-btn pt-3 pb-3">
+        <button class="filter" data-filter="all">Todos</button>
+        <button class="filter" data-filter=".web">Web</button>
+        <button class="filter" data-filter=".illustration">Illustraciones</button>
+      </div>    
 
-          <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contenido-srch pt-3 pb-3">
+        <input type="text" id="input" placeholder="Ingresa skill">
+      </div>
+    
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('assets/img/oftalmo.jpg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="http://oftalmolaser.com.pe/" target="_Blank">
-                
-                </a>
+    <hr>
 
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+     <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('https://animopsicoterapia.com/wp-content/themes/temaanimopsi/img/logo-animo-psicoterapia.svg') no-repeat center center;
+              background-size: 55%; 
+              height: 150px; width: 100%; display: block;" href="https://animopsicoterapia.com/" target="_Blank">
+              
+              </a>
+          </div>
 
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('https://devino.pe/wp-content/themes/devino/img/svg/logo.svg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="https://devino.pe/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('https://www.wariurpi.pe/wp-content/themes/wariurpi/img/svg/logo-marron.svg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="https://www.wariurpi.pe/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('https://carticolagen.com/wp-content/themes/lamilenaria/img/svg/logo-color.svg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="https://carticolagen.com/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('http://lcbsol.com/wp-content/uploads/2018/12/logo-lcb-color.svg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="http://lcbsol.com/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('https://mamiboo.com/wp-content/uploads/2017/05/logomamiboo.png') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="https://mamiboo.com/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-  
-             <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a  style="background: url('https://animopsicoterapia.com/wp-content/themes/temaanimopsi/img/logo-animo-psicoterapia.svg') no-repeat center center;
-                background-size: cover; 
-                height: 225px; width: 100%; display: block;" href="https://animopsicoterapia.com/" target="_Blank">
-                
-                </a>
-
-                <div class="card-body">
-                  <p class="card-text">Desarrollo web completo</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
           </div>
         </div>
-      </div>  
 
-    </main>
+
+
+
+    <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('https://mamiboo.com/wp-content/uploads/2017/05/logomamiboo.png') no-repeat center center;
+              background-size: 65%; 
+              height: 150px; width: 100%; display: block;" href="https://mamiboo.com/" target="_Blank">
+              
+              </a>
+          </div>
+
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
+          </div>
+        </div>
+
+
+        
+
+        <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('http://oftalmolaser.com.pe/wp-content/themes/Oftalmolaser/img/Logos-03.png') no-repeat center center;
+              background-size: 100%; 
+              height: 150px; width: 100%; display: block;" href="http://oftalmolaser.com.pe/" target="_Blank">
+              
+              </a>
+          </div>
+
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('https://grupokoller.com.pe/wp-content/themes/koller/img/clientes/logo-koller.svg') no-repeat center center;
+              background-size: 75%; 
+              height: 150px; width: 100%; display: block;" href="https://grupokoller.com.pe/" target="_Blank">
+              
+              </a>
+          </div>
+
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+          <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('https://devino.pe/wp-content/themes/devino/img/svg/logo.svg') no-repeat center center;
+              background-size: 50%; 
+              height: 150px; width: 100%; display: block;" href="https://devino.pe/" target="_Blank">
+              
+              </a>
+          </div>
+
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+          <div class="card mb-4 box-shadow">
+              <a  style="background: url('https://www.wariurpi.pe/wp-content/themes/wariurpi/img/svg/logo-marron.svg') no-repeat center center;
+              background-size: 35%; 
+              height: 150px; width: 100%; display: block;" href="https://www.wariurpi.pe/" target="_Blank">
+              
+              </a>
+          </div>
+
+          <div class="title contenido-badge">
+            <small class=" badge badge-warning">PHP</small>              
+            <small class="badge badge-warning">JAVASCRIPT</small>
+            <small class="badge badge-warning">HTML5</small>
+            <small class="badge badge-warning">CSS</small>
+            <small class="badge badge-warning">Wordpress</small>
+          </div>
+        </div>
+
+
+
+
+
+      <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('https://carticolagen.com/wp-content/themes/lamilenaria/img/svg/logo-color.svg') no-repeat center center;
+          background-size: 50%; 
+          height: 150px; width: 100%; display: block;" href="https://carticolagen.com/" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">PHP</small>              
+        <small class="badge badge-warning">JAVASCRIPT</small>
+        <small class="badge badge-warning">HTML5</small>
+        <small class="badge badge-warning">CSS</small>
+        <small class="badge badge-warning">Wordpress</small>
+      </div>
+    </div>
+
+
+
+    <div class="mix web  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('http://lcbsol.com/wp-content/uploads/2018/12/logo-lcb-color.svg') no-repeat center center;
+          background-size: 65%; 
+          height: 150px; width: 100%; display: block;" href="http://lcbsol.com/" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">PHP</small>              
+        <small class="badge badge-warning">JAVASCRIPT</small>
+        <small class="badge badge-warning">HTML5</small>
+        <small class="badge badge-warning">CSS</small>
+        <small class="badge badge-warning">Wordpress</small>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- illustraciones -->
+
+    <div class="mix illustration  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('assets/img/mockup-tarjetas.jpg') no-repeat center center;
+          background-size: 100%; 
+          height: 150px; width: 100%; display: block;" href="#" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">Illustrator</small>              
+        <small class="badge badge-warning">Photoshop</small>
+      </div>
+    </div>
+
+
+
+    <div class="mix illustration  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('assets/img/corporate-identity-mockup.jpg') no-repeat center center;
+          background-size: 100%; 
+          height: 150px; width: 100%; display: block;" href="#" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">Illustrator</small>              
+        <small class="badge badge-warning">Photoshop</small>
+      </div>
+    </div>
+
+
+    <div class="mix illustration  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('assets/img/Espacio-work.jpg') no-repeat center center;
+          background-size: 100%; 
+          height: 150px; width: 100%; display: block;" href="#" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">Illustrator</small>              
+        <small class="badge badge-warning">Photoshop</small>
+      </div>
+    </div>
+
+
+    <div class="mix illustration  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('assets/img/noocturno.jpg') no-repeat center center;
+          background-size: 100%; 
+          height: 150px; width: 100%; display: block;" href="#" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">Illustrator</small>              
+        <small class="badge badge-warning">Photoshop</small>
+      </div>
+    </div>
+
+
+
+    <div class="mix illustration  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4 mt-4">
+      <div class="card mb-4 box-shadow">
+          <a  style="background: url('assets/img/nocturlette.jpg') no-repeat center center;
+          background-size: 100%; 
+          height: 150px; width: 100%; display: block;" href="#" target="_Blank">
+          
+          </a>
+      </div>
+
+      <div class="title contenido-badge">
+        <small class=" badge badge-warning">Illustrator</small>              
+        <small class="badge badge-warning">Photoshop</small>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid vc6f-->
+    <div class="row m-0">
+
+      <!-- Grid column -->
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="mt-5 text-center">
+
+          <!-- Facebook -->
+          <a href="https://github.com/SergioCubasB" target="_blank" class="fb-ic">
+            <img class="icon-redes" src="assets/svg/github.svg" alt="">
+          </a>
+          <!-- Twitter -->
+          <a href="https://www.linkedin.com/in/sergiocubasbernal/" target="_blank" class="tw-ic">
+            <img class="icon-redes" src="assets/svg/linkendin.svg" alt="">
+          </a>
+          <!-- Google +-->
+          <a href="https://www.facebook.com/sergio.cubas.39" target="_blank" class="gplus-ic">
+            <img class="icon-redes" src="assets/svg/facebook.svg" alt="">
+          </a>
+          <!--Linkedin -->
+          <a href="#" class="li-ic">
+            <img class="icon-redes" src="assets/svg/twitter.svg" alt="">
+          </a>
+          <!--Instagram-->
+          <a href="https://www.instagram.com/stories/sergio_cubas_/" target="_blank" class="ins-ic">
+            <img class="icon-redes" src="assets/svg/instagram.svg" alt="">
+          </a>
+          <!--Pinterest-->
+          <a href="#" class="pin-ic">
+            <img class="icon-redes" src="assets/svg/behance.svg" alt="">
+          </a>
+
+          <a href="#" class="pin-ic">
+            <img class="icon-redes" src="assets/svg/dribbble.svg" alt="">
+          </a>
+
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Maquetado <i class="fas fa-desktop"></i> desarrollado
+     
+  </div>
+  <!-- Copyright -->
+      </div>
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+
+</footer>
 
 
     
 
   <script src="assets/js/logica.js"></script>
 
-  <script>
-function mostrarSaludo(){
- 
-  fecha = new Date(); 
-  hora = fecha.getHours(); 
- 
-  if(hora >= 0 && hora < 12){
-    texto = "Hola, buenos días";
-    imagen = "assets/svg/dinodino.svg";
-  }
- 
-  if(hora >= 12 && hora < 18){
-    texto = "Hola, buenas tardes";
-    imagen = "assets/svg/dinodino.svg";
-  }
- 
-  if(hora >= 18 && hora < 24){
-    texto = "Hola, buenas noches";
-    imagen = "assets/svg/dinodino.svg";
-  }
- 
-  document.images["tiempo"].src = imagen;
- 
-  document.getElementById('txtsaludo').innerHTML = texto;
- 
-}
-</script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
+  <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js" type="text/javascript"></script>
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
   <script type="text/javascript">
-   $(function(){
-    $("#myModal").modal();
-   });
+   $(function() {
+
+  $(".container").mixItUp();
+
+  var inputText;
+  var $matching = $();
+
+  // Delay function
+  var delay = (function(){
+    var timer = 0;
+    return function(callback, ms){
+      clearTimeout (timer);
+      timer = setTimeout(callback, ms);
+    };
+  })();
+
+  $("#input").keyup(function(){
+    // Delay function invoked to make sure user stopped typing
+    delay(function(){
+      inputText = $("#input").val().toLowerCase();
+      
+      // Check to see if input field is empty
+      if ((inputText.length) > 0) {            
+        $( '.mix').each(function() {
+          $this = $("this");
+          
+           // add item to be filtered out if input text matches items inside the title   
+           if($(this).children('.title').text().toLowerCase().match(inputText)) {
+            $matching = $matching.add(this);
+          }
+          else {
+            // removes any previously matched item
+            $matching = $matching.not(this);
+          }
+        });
+        $(".container").mixItUp('filter', $matching);
+      }
+
+      else {
+        // resets the filter to show all item if input is empty
+        $(".container").mixItUp('filter', 'all');
+      }
+    }, 200 );
+  });
+})
   </script>
     
 
 
   </body>
   </html>
+
 
