@@ -16,78 +16,155 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-      body {
-  font-family: Work Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
+/* body css not needed for main site  */
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.cookie-wrapper {
-  display: none;  
+/*------------ The Modal Styling Starts Here -------- */
+
+.umcCookiePopup {
+  display: none; /* Hidden by default */
+  position: absolute;
+  margin-left:calc(50% - 200px);
+  bottom: -10px;
+  z-index: 1; /* Sit on top */
+  padding-top:0; /* Location of the box */
+  height: 200px; /* Full height */
+  width:400px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  border: 1px solid #E4002B;
+  z-index:5;
+  background-color: #fff;
+  transition: 
+      bottom 500ms cubic-bezier(0.42,-0.37, 0.28, 0.85),
+      transform 500ms cubic-bezier(0.42,-0.37, 0.28, 0.85),
+      opacity 500ms;
+  border-radius: 3px;
+  transform: scale(.2);
+  opacity:.2;
 }
 
-.cookie-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: rgba(245,247,250, 0.8);
-  box-shadow: 0 0 20px 0 rgba(0,0,0,.08);
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  z-index: 1010;
+.modal-fade-in {
+  bottom:20px!important; 
+  opacity:1!important;
+  transform: scale(1);
+  transition:
+    bottom 500ms cubic-bezier(0, 0, 0.30, 1.26),
+    transform 500ms cubic-bezier(0, 0, 0.30, 1.26),
+    opacity 500ms;
+}
+/* Modal Content */
+.modal-header{
+  background-color: #E4002B;
+  height:30px;
+}
+.title {
+  float:left;
+  margin:0px;
+  width:80%;
+  padding:5px 0 0 10px;
+  color:#fff;
 }
 
-.cookie-text {
-  display: inline;
-  color: #545454;
+.modal-body {
+  background-color: #fff;
+  margin:20px 20px 0px 20px;
+  height:140px;
+}
+.modal-body p{
+  margin:0px 0 20px 0;
 }
 
-.cookie-text-wrapper > .cookie-text > a {
-  text-decoration: none;
+.modal-btn {
+  background-color: #E4002B;
+  border:none;
+  padding:10px;
+  color:#fff;
+  width:150px;
+  clear:both;
+  transition: 250ms cubic-bezier(0, 0, 0.49, 1.26);
+  position: absolute;
+  top: 65%;
+  left: 55%;
   font-weight: bold;
-  color: #545454;
+  font-size: 1em;
+  border-radius: 3px;
 }
 
-.cookie-button {
-  display: inline-block;
-  padding: 10px 20px 10px 20px;
-  cursor: pointer;
+.modal-footer {
+  background-color: #E4002B;
+  height:0px;
+}
+
+.modal-footer p {
+  color:#fff;
+  padding:5px 10px 0 5px;
+  margin:0;
+}
+
+/* The Close Button */
+.close {
   color: #fff;
-/*   background-color: #076cdb; */
-  background-color: #656262;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 18px;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right:5px;
+  transition: 250ms ease-out;
 }
 
+.close:hover,
+.close:focus,
+.close span:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.modal-btn:hover {
+  box-shadow:0 4px 8px -5px #000;
+  transform: scale(1.1);
+}
     </style>
      
 
   </head>
   <body  onload="mostrarSaludo()">
 
-<div class="cookie-wrapper">
-  <div class="cookie-content">
-    <div class="cookie-text-wrapper">
-      <p class="cookie-text">Tieto internetové stránky používajú súbory cookie. Tým, že na stránkach zotrváte, súhlasíte s používaním súborov cookie. Viac informácií 
-        <a href="http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm" target="_blank">
-          tu
-        </a>
-      </p>
-    </div>
-    <div class="cookie-button-wrapper">
-      <a id="cookie_accept_btn" class="cookie-button">OK</a>
-    </div>
+<!--  Font  -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--  START TESTING BUTTONS / NOT NEEDED -->
+
+<!-- <h2>Popup show if no cookie</h2>
+<p>Comments in the code will help with applying the popup to your site. Pretty much, modal goes in head, js can be added to its own file or in script at bottom of page, and css in tag or own css file. </p>
+<button class="checkCookie">Check Cookie</button>
+<button class="resetCookie">Reset Cookie</button> -->
+
+<!-- END TESTING BUTTONS -->
+
+<!-- *********** START MODAL CODE ********** -->
+<div class="umcCookiePopup" id="umcCookiePopup"><!-- Modal content -->
+
+  <div class="modal-header">
+    <h3 class="title">Cookie Notification</h3>
+    <span class="close">×</span>
+
+
   </div>
+
+  <div class="modal-body">
+      <p>This website uses “cookies” to expedite site speed and customize our presentation to better serve you. <b>Please click “I Understand” to proceed to content.</b></p>
+
+      <button class="modal-btn">I Understand</button>
+  </div>
+
+  <div class="modal-footer"></div>
+
 </div>
+<!-- **** end modal code **** -->
 
  
 
@@ -97,15 +174,116 @@
 
 
   <script type="text/javascript">
- $(document).ready(function() {
-  if (document.cookie.replace(/(?:(?:^|.*;\s*)gt_accepted\s*\=\s*([^;]*).*$)|^.*$/, "$1") != "yes") {
-    $('.cookie-wrapper').fadeIn(500);
-  };
-  $('#cookie_accept_btn').click(function() {
-      document.cookie = "gt_accepted=yes; expires=Mon, 24 Jun 2022 15:00:00 GMT; path=/";
-      $('.cookie-wrapper').fadeOut(350);
-    });
-});    
+ /* 
+  Cookie Notifiction / Bottom of Window 
+  Author: FruitLukes
+*/
+// ******* START *********
+var modal = document.getElementById('umcCookiePopup');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var understandBtn = document.getElementsByClassName("modal-btn")[0];
+var checkBtn = document.getElementsByClassName("checkCookie")[0];
+var resetBtn = document.getElementsByClassName("resetCookie")[0];
+var cookie = "";
+var now = new Date();
+
+// *************** FUNCTIONS ***************
+
+// Show Modal
+function showPopup() {
+  modal.style.display = "block";
+  setTimeout(function(){modal.classList.add("modal-fade-in")},10);
+}
+
+// Set path=YourSite, line 33
+// Set New Cookie
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=https://codepen.io/FruitLukes/pen/KbwvGV";
+}
+
+//Get Cookie
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+//Check for Specific Cookie
+function checkCookie() {
+  console.log("Check Cookie");
+  var cookieVal = getCookie("Visited");
+    if (cookieVal != "") {
+      cookie = "yes";
+    } else{
+      cookie = "none";
+    } 
+  }
+
+// ************ CHECK FOR COOKIE / IF NONE, SHOW POPUP **********
+// ON Load Check for Cookie 
+checkCookie();
+if(cookie == "none") {
+    showPopup(); 
+   }else{
+     var cookieName = getCookie("Visited");
+ }
+
+// ******** BUTTONS ************
+// Close Button
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.classList.remove("modal-fade-in");
+  setTimeout(function(){modal.style.display = "none"},100);
+} 
+// I Understand Button
+understandBtn.onclick = function() {
+  setCookie("Visited", "yes", 365);
+  console.log("cookie created");
+  modal.classList.remove("modal-fade-in");
+  setTimeout(function(){modal.style.display = "none"},200);
+}
+
+//************** END ******************
+
+// ********************BUTTONS For Testing / DONT INCLUDE********************
+// Checks for cookie, if none, show popup
+// checkBtn.onclick = function() {
+//   console.log("--------checkBtn--------");
+//   checkCookie();
+//   if(cookie == "none") {
+//     console.log("cookie: none"); 
+//    }else{
+//     console.log("Already Visited");
+// }
+// }
+// resetBtn.onclick = function() {
+//   console.log("--------resetBtn--------");
+//   document.cookie = "Visited=; expires=;";
+//   checkCookie();
+//   if(cookie == "none") {
+//     console.log("Cookie: " + cookie);
+//     showPopup();
+//    }else {
+//      console.log("Cookie: Visited=" + cookie)}
+// }
   </script>    
 
 
