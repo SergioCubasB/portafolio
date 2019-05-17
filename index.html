@@ -18,45 +18,6 @@
 
   </head>
   <body>
-
-
-
-<!-- Modal   onload="mostrarSaludo()" -->
-    <div class="modal fade" id="myModal" role="dialog" style="display: none; padding-right: 17px; background: #ffa502;">
-      <div class="modal-dialog"><!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal" type="button">×</button>
-        </div>
-
-          <div class="modal-body">
-
-            <div id="saludo" class="mb-5 mt-5">
-   
-              <img name="tiempo">
-             
-              <div id="txtsaludo"></div>
-              <p>En estos momentos me encuentro mejorando la plataforma. <br>
-                Este portafolio es una web simple que será integrado al CMS Wordpress. <br>
-                Podras encontrar mi cv y portafolio de trabajo si te animas a revisar.
-                
-  
-
-              </p>
-             
-          </div> 
-          </div>
-
-        <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal" type="button">Revisar</button>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-
-
     <div class="container-fluid p-0 fondo">
       <div class="row m-0">
         <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 col-12 responsive-completo contenido-datos">
@@ -306,30 +267,39 @@
       </div>
     </div>
     
+    
+    
+<div class="cookie-wrapper">
+  <div class="cookie-content">
+    <div class="cookie-text-wrapper">
+      <p class="cookie-text">
+        En estos momentos me encuentro mejorando la plataforma. <br>
+Este portafolio es una web simple que será integrado al CMS Wordpress. <br>
+Podras encontrar mi cv y portafolio de trabajo si te animas a revisar.
+      </p>
+    </div><br>
+    <div class="cookie-button-wrapper">
+      <a id="cookie_accept_btn" class="cookie-button">Revisar web</a>
+    </div>
+  </div>
+</div>
+    
+    
 
-  <script src="http://momstudio.es/img/img-elmaquetadorweb/cookieconsent.min.js" type="text/javascript"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
   <script type="text/javascript">
-  window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000000"
-    },
-    "button": {
-      "background": "#ffffff"
-    }
-  },
-  "content": {
-    "message": "Hola, buenas tardes, en estos momentos me encuentro mejorado la plataforma; este portafolio es una web simple que será integrado al CMS Wordpress.",
-    "dismiss": "ACEPTAR",
-    "link": "",
-    "href": "#"
-  }
-})});
-
+ $(document).ready(function() {
+  if (document.cookie.replace(/(?:(?:^|.*;\s*)gt_accepted\s*\=\s*([^;]*).*$)|^.*$/, "$1") != "yes") {
+    $('.cookie-wrapper').fadeIn(500);
+  };
+  $('#cookie_accept_btn').click(function() {
+      document.cookie = "gt_accepted=yes; expires=Mon, 24 Jun 2022 15:00:00 GMT; path=/";
+      $('.cookie-wrapper').fadeOut(350);
+    });
+});    
   </script>    
     
     
