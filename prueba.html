@@ -1,0 +1,115 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFB000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mí</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+  font-family: Work Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.cookie-wrapper {
+  display: none;  
+}
+
+.cookie-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(245,247,250, 0.8);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.08);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 1010;
+}
+
+.cookie-text {
+  display: inline;
+  color: #545454;
+}
+
+.cookie-text-wrapper > .cookie-text > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #545454;
+}
+
+.cookie-button {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  color: #fff;
+/*   background-color: #076cdb; */
+  background-color: #656262;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+    </style>
+     
+
+  </head>
+  <body  onload="mostrarSaludo()">
+
+<div class="cookie-wrapper">
+  <div class="cookie-content">
+    <div class="cookie-text-wrapper">
+      <p class="cookie-text">Tieto internetové stránky používajú súbory cookie. Tým, že na stránkach zotrváte, súhlasíte s používaním súborov cookie. Viac informácií 
+        <a href="http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm" target="_blank">
+          tu
+        </a>
+      </p>
+    </div>
+    <div class="cookie-button-wrapper">
+      <a id="cookie_accept_btn" class="cookie-button">OK</a>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <script type="text/javascript">
+ $(document).ready(function() {
+  if (document.cookie.replace(/(?:(?:^|.*;\s*)gt_accepted\s*\=\s*([^;]*).*$)|^.*$/, "$1") != "yes") {
+    $('.cookie-wrapper').fadeIn(500);
+  };
+  $('#cookie_accept_btn').click(function() {
+      document.cookie = "gt_accepted=yes; expires=Mon, 24 Jun 2022 15:00:00 GMT; path=/";
+      $('.cookie-wrapper').fadeOut(350);
+    });
+});    
+  </script>    
+
+
+  </body>
+  </html>
+
+
